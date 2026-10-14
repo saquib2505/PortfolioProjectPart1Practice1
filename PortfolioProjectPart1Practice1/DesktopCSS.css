@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clarity-city {
+    font-family: "Clarity City", sans-serif;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+}
+
+/* Base Link Reset */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Grid System Override for Desktop */
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.col-2  { width: 16.66%; }
+.col-4  { width: 33.33%; }
+.col-6  { width: 50%; }
+
+/* Desktop Navbar Layout */
+.navbar {
+    background-color: #40868b;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center; /* Vertically aligns logo, text, and menu */
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.nav-heading h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+}
+
+.navbar-menu a {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.common-hr {
+    clear: both;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
